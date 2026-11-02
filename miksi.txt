@@ -1,2 +1,0 @@
-Miksi pitäisi käyttää ssh clonea kun https clone toimii myös?
-turha lisäys kysymykseen
