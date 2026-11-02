@@ -58,8 +58,11 @@ class TestVarasto(unittest.TestCase):
 
     def test_ottaminen_clamp(self):
         self.assertAlmostEqual(self.varasto.ota_varastosta(-1), 0)
-        self.varasto.lisaa_varastoon(100)
+        self.varasto.lisaa_varastoon(10)
         self.assertAlmostEqual(self.varasto.ota_varastosta(15), 10)
 
     def test_str(self):
         self.assertAlmostEqual(f"{self.varasto}", "saldo = 0, vielä tilaa 10")
+
+    def rikkinainen_testi(self):
+        self.assertAlmostEqual(1000, 1)
