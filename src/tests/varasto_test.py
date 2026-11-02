@@ -64,5 +64,5 @@ class TestVarasto(unittest.TestCase):
     def test_str(self):
         self.assertAlmostEqual(f"{self.varasto}", "saldo = 0, vielä tilaa 10")
 
-    def rikkinainen_testi(self):
-        self.assertAlmostEqual(1000, 1)
+    def test_rikkinainen_testi(self):
+        self.assertAlmostEqual(0, 1)
